@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo: Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/game.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Jogo: Pedra, Papel e Tesoura</h1>
+        <div id="player">
+            <h2 id="subTitle1">Você</h2>
+            <figure>
+                <img src="images/Pedra.png" id="stone1" onclick="setAnswerPlayer('stone1')" onmouseenter="increaseOpacity('stone1')" onmouseout="decreaseOpacity('stone1')">
+                <img src="images/Papel.png" id="paper1" onclick="setAnswerPlayer('paper1')" onmouseenter="increaseOpacity('paper1')" onmouseout="decreaseOpacity('paper1')">
+                <img src="images/Tesoura.png" id="scissors1" onclick="setAnswerPlayer('scissors1')" onmouseenter="increaseOpacity('scissors1')" onmouseout="decreaseOpacity('scissors1')">
+            </figure>
+        </div>
+        <div id="bot">
+            <h2 id="subTitle2">Bot</h2>
+            <figure>
+                <img src="images/Pedra.png" id="stone2">
+                <img src="images/Papel.png" id="paper2">
+                <img src="images/Tesoura.png" id="scissors2">
+            </figure>
+        </div>
+    </main>
+</body>
+
+</html>
